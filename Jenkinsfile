@@ -16,7 +16,7 @@ pipeline {
         
          stage('Test report using jacoco') {
             steps {
-                echo 'jacoco'
+                 jacoco()
             }
         }
         
