@@ -4,17 +4,17 @@ pipeline {
     stages {
          stage('Checkout') {
             steps {
-               git 'https://github.com/mohammadazeez963/javaProject.git'
+               git 'https://github.com/Mayur30-97/OlxUsersMicroservice.git'
             }
         }
         stage('Compile') {
             steps {
-                echo 'Compiling'
+                bat 'mvn clean compile'
             }
         }
          stage('Run') {
             steps {
-                echo 'Running'
+               bat 'mvn package'
             }
         }
         
